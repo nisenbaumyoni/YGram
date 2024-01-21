@@ -1,33 +1,34 @@
 import { storageService } from "./async-storage.service.js";
 import { utilService } from "./util.service.js";
 
-export const robotService = {
+export const profileService = {
   query,
   save,
   remove,
   getById,
-  createRobot,
+  createProfile,
+  getDefaultFilter,
 };
 
-const STORAGE_KEY = "robots";
+const STORAGE_KEY = "profiles";
 
-_createRobots();
+_createMockProfiles();
 
 async function query(filterBy) {
-  const robots = await storageService.query(STORAGE_KEY);
+  let profiles = await storageService.query(STORAGE_KEY);
   if (filterBy) {
     var { type, maxBatteryStatus, minBatteryStatus, model } = filterBy;
     maxBatteryStatus = maxBatteryStatus || Infinity;
     minBatteryStatus = minBatteryStatus || 0;
-    robots = robots.filter(
-      (robot) =>
-        robot.type.toLowerCase().includes(type.toLowerCase()) &&
-        robot.model.toLowerCase().includes(model.toLowerCase()) &&
-        robot.batteryStatus < maxBatteryStatus &&
-        robot.batteryStatus > minBatteryStatus
+    profiles = profiles.filter(
+      (profile) =>
+        profile.type.toLowerCase().includes(type.toLowerCase()) &&
+        profile.model.toLowerCase().includes(model.toLowerCase()) &&
+        profile.batteryStatus < maxBatteryStatus &&
+        profile.batteryStatus > minBatteryStatus
     );
   }
-  return robots;
+  return profiles;
 }
 
 function getById(id) {
@@ -38,16 +39,16 @@ function remove(id) {
   return storageService.remove(STORAGE_KEY, id);
 }
 
-function save(robotToSave) {
-  if (robotToSave.id) {
-    return storageService.put(STORAGE_KEY, robotToSave);
+function save(profileToSave) {
+  if (profileToSave.id) {
+    return storageService.put(STORAGE_KEY, profileToSave);
   } else {
-    robotToSave.isOn = false;
-    return storageService.post(STORAGE_KEY, robotToSave);
+    profileToSave.isOn = false;
+    return storageService.post(STORAGE_KEY, profileToSave);
   }
 }
 
-function createRobot(model = "", type = "", batteryStatus = 100) {
+function createProfile(model = "", type = "", batteryStatus = 100) {
   return {
     model,
     batteryStatus,
@@ -55,10 +56,10 @@ function createRobot(model = "", type = "", batteryStatus = 100) {
   };
 }
 
-function _createRobots() {
-  let robots = utilService.loadFromStorage(STORAGE_KEY);
-  if (!robots || !robots.length) {
-    robots = [
+function _createMockProfiles() {
+  let profiles = utilService.loadFromStorage(STORAGE_KEY);
+  if (!profiles || !profiles.length) {
+    profiles = [
       { _id: "r2", model: "Salad-O-Matic", batteryStatus: 80, type: "Cooking" },
       { _id: "r3", model: "Dusty", batteryStatus: 100, type: "Cleaning" },
       {
@@ -69,6 +70,10 @@ function _createRobots() {
       },
       { _id: "r4", model: "DevTron", batteryStatus: 40, type: "Office" },
     ];
-    utilService.saveToStorage(STORAGE_KEY, robots);
+    utilService.saveToStorage(STORAGE_KEY, profiles);
   }
+}
+
+function getDefaultFilter() {
+  return {};
 }
