@@ -1,10 +1,21 @@
+import { Routes, Route } from "react-router";
+import routes from "./routes";
 
 export function App() {
-
-    return (
-        <section className='main-app'>
-            <h1>Hello!</h1>
-        </section>
-    )
+  return (
+    <div>
+      <main>
+        <Routes>
+          {routes.map((route) => (
+            <Route
+              key={route.path}
+              exact={true}
+              element={route.component}
+              path={route.path}
+            />
+          ))}
+        </Routes>
+      </main>
+    </div>
+  );
 }
-

@@ -7,6 +7,7 @@ export const storyService = {
     remove,
     getById,
     createStory,
+    getDefaultFilter
 }
 
 const STORAGE_KEY = 'stories'
@@ -14,7 +15,7 @@ const STORAGE_KEY = 'stories'
 _createStories()
 
 async function query(filterBy) {
-    const stories = await storageService.query(STORAGE_KEY)
+    let stories = await storageService.query(STORAGE_KEY)
     if (filterBy) {
         var { type, maxBatteryStatus, minBatteryStatus, model } = filterBy
         maxBatteryStatus = maxBatteryStatus || Infinity
@@ -64,6 +65,7 @@ function _createStories() {
     }
 }
 
-
-
+function getDefaultFilter() {
+    return {};
+  }
 

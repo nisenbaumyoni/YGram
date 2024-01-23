@@ -1,6 +1,17 @@
 import { storageService } from "./async-storage.service.js";
 import { utilService } from "./util.service.js";
 
+const mockLoggedInUser = {
+  _id: "u101",
+  username: "Muko",
+  password: "mukmuk",
+  fullname: "Muki Muka",
+  imgUrl: "http://some-img",
+  following: [],
+  followers: [],
+  savedStoryIds: [],
+};
+
 export const profileService = {
   query,
   save,

@@ -1,6 +1,6 @@
 import { legacy_createStore as createStore } from "redux";
-import { profileReducer } from "./reducers/profile.reducer";
+import { storyReducer } from "./reducers/story.reducer";
 
-export const store = createStore(profileReducer)
+export const store = createStore(storyReducer)
 
 window.gStore = store
