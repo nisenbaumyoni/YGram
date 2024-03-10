@@ -86,5 +86,7 @@ function _createMockProfiles() {
 }
 
 function getDefaultFilter() {
-  return {};
+  return {
+    
+  };
 }

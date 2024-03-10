@@ -5,7 +5,7 @@ export function ProfileIndex() {
     const [searchParams,setSearchParams] = useSearchParams()
 
     return (
-        <section className="home">
+        <section className="indexpage">
             <h1>ProfileIndex</h1>
         </section>
     )

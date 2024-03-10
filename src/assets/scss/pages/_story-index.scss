@@ -1,0 +1,11 @@
+.story-index {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'newstories user-cmp'
+        'story-list suggested-for-you'
+        'story-list about';
+    grid-template-rows: 1.5fr 5fr 4fr;
+    grid-template-columns: 8fr 4fr;
+}
