@@ -1,0 +1,56 @@
+.logo {
+    display: flex;
+    width: 220px;
+    height: 92px;
+    padding: 12px;
+    margin: 4px;
+    justify-content: left;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border-right: 1px solid $clr4;
+    position: fixed; // border-right-width: thin;
+    width: 244px;
+    height: 100%;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-items {
+    display: flex;
+}
+
+.sidebar-item {
+    display: flex;
+    width: 224px;
+    height: 48px;
+    padding: 12px;
+    margin: 4px;
+    justify-content: left;
+    align-items: center;
+}
+
+.sidebar-text {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px;
+}
+
+.sidebar-profile-photo {
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 50%;
+}

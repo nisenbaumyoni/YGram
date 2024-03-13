@@ -2,16 +2,16 @@ import { Logo } from "../cmps/Logo";
 import { SideBarItem } from "../cmps/SideBarItem";
 
 export function SideBar() {
-    return(
-        <section className="sidebar">
-            <h1>sidebar</h1>
-            {/* <Logo/>
-            <SideBarItem/>
-            <SideBarItem/>
-            <SideBarItem/>
-            <SideBarItem/>
-            <SideBarItem/>
-            <SideBarItem/> */}
-        </section>
-    )
+  return (
+    <section className="sidebar">
+      <Logo />
+      <div className="sidebar-items"></div>
+      <SideBarItem itemName={"home"} />
+      <SideBarItem itemName={"search"} />
+      <SideBarItem itemName={"messages"} />
+      <SideBarItem itemName={"notifications"} />
+      <SideBarItem itemName={"create"} />
+      <SideBarItem itemName={"profile"} />
+    </section>
+  );
 }

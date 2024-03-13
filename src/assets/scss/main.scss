@@ -1,50 +1,86 @@
+//base
 @import 'setup/vars';
 @import 'base/base';
 @import 'base/helpers';
 @import 'base/layout';
-@import 'cmps/story-preview';
+//cmps
+// @import 'cmps/new-stories.scss';
+@import 'cmps/story/story-buttons.scss';
+@import 'cmps/story/story-content';
+@import 'cmps/story/story-header';
+@import 'cmps/story/story-list';
+@import 'cmps/story/story-preview';
+@import 'cmps/story/story-stats';
+@import 'cmps/sidebar/sidebar';
+@import 'cmps/rightbar/rightbar';
+//pages
 @import 'pages/story-index';
 
-.dark-mode{
+* {
+    box-sizing: border-box;
+}
+
+.dark-mode {
     --clr1: $clr1;
 }
 
-.main-app{
+.main-app {
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-areas:
         'sidebar    indexpage';
-    grid-template-columns: 2fr 10fr;
-}
-
-.sidebar {
-    border: 1px solid black;
-    height: 100%;
+    grid-template-columns: 244px 10fr;
 }
 
 .newstories {
-    border: 1px solid black;
+    // border: 1px solid black;
     grid-area: newstories;
 }
 
 .story-list {
-    border: 1px solid black;
+    // border: 1px solid black;
     grid-area: story-list;
 }
 
-.user-cmp {
-    border: 1px solid black;
-    grid-area: user-cmp;
-}
-
 .suggested-for-you {
-    border: 1px solid black;
+    // border: 1px solid black;
     grid-area: suggested-for-you;
 
 }
 
 .about {
-    border: 1px solid black;
+    // border: 1px solid black;
     grid-area: about;
+}
+
+ul {
+    .story-list & {
+        list-style-type: none;
+    }
+}
+
+.bold-text {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.soft-text {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: $clr3
 }

@@ -14,6 +14,7 @@ import { NewStories } from "../cmps/NewStories";
 import { UserCmp } from "../cmps/UserCmp";
 import { SuggestedForYou } from "../cmps/SuggestedForYou";
 import { About } from "../cmps/About";
+import { Loggedin } from "../cmps/rightbar/loggedin";
 
 export function StoryIndex() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -31,7 +32,7 @@ export function StoryIndex() {
     <section className="story-index">
       <NewStories />
       {!!stories?.length && <StoryList stories={stories} />}
-      <UserCmp/>
+      <Loggedin/>
       <SuggestedForYou/>
       <About/>
       {/* <Outlet /> */}

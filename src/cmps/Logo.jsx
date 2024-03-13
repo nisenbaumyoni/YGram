@@ -1,5 +1,7 @@
 export function Logo() {
-    <section className='logo'>
-        <h1>logo</h1>
+  return (
+    <section className="logo">
+      <img src="public/instagram-logo.svg" alt="LOGO" />
     </section>
+  );
 }
