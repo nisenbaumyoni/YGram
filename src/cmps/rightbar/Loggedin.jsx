@@ -1,7 +1,12 @@
+import { useState } from "react";
+import { UserCmp } from "../UserCmp";
+
 export function Loggedin() {
-    return(
+  const [isLoggedIn, SetIsLoggedIn] = useState(true);
+  const user = "nopic";
+  return (
     <section className="loggedin">
-        <h1>Logged in</h1>
+      <UserCmp user={user} isLoggedIn={isLoggedIn} />
     </section>
-    )
+  );
 }

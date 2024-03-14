@@ -84,3 +84,31 @@ ul {
     font-weight: 400;
     color: $clr3
 }
+
+.small-link {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: $clr4;
+    padding: 2px;
+}
+
+.small-text {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: $clr4;
+    padding: 2px;
+}

@@ -33,6 +33,12 @@
     margin: 4px;
     justify-content: left;
     align-items: center;
+
+    &:hover {
+        @each $property, $value in $sidebar-item-hover {
+            #{$property}: $value;
+          }
+    }
 }
 
 .sidebar-text {

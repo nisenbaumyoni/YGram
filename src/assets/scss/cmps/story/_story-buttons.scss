@@ -2,12 +2,26 @@
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+
+
 }
 
 .story-button{
     padding-right: 10px;
+
+    &:hover {
+        @each $property, $value in $story-button-hover {
+            #{$property}: $value;
+          }
+    }
 }
 
 .story-button-save{
     text-align: right;
+
+    &:hover {
+        @each $property, $value in $story-button-hover {
+            #{$property}: $value;
+          }
+    }
 }

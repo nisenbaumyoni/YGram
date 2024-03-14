@@ -5,4 +5,39 @@ $clr4: #8e8e8e;
 $clr5: #efefef;
 $clr6: #fafafa;
 $clr7: #ffffff;
-$gtc: 1fr 5fr
+$gtc: 1fr 5fr;
+// $story-button-hover-behavior: {border: none,color: white,text-align: center,text-decoration: none,
+//     transition-duration: 0.4s,
+//     opacity: 0.5,
+//     cursor: pointer
+// }
+$story-button-hover: (
+  opacity: 0.5,
+  border: none,
+  text-align: center,
+  cursor: pointer,
+  transition-duration: 0.4s,
+  text-decoration: none,
+);
+
+$sidebar-item-hover:(
+    background-color: $clr5,
+    border-radius: 8%,
+    border: none,
+    cursor: pointer,
+    transition-duration: 0.6s,
+    text-decoration: none,
+);
+
+$simple-hover: (
+    border: none,
+    cursor: pointer,
+    transition-duration: 0.3s,
+);
+
+$blue-link-hover: (
+    color: #0095f6,
+    border: none,
+    cursor: pointer,
+    transition-duration: 0.3s,
+)
