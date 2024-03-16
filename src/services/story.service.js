@@ -62,8 +62,7 @@ const backupStories = [
   {
     _id: "1",
     txt: "Best trip ever 1 !!!",
-    imgUrl:
-      "https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg", //an array for a few pictures
+    imgUrl: "https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg", //an array for a few pictures
     createdAt: 1707088568381,
     createdBy: {
       _id: "u101",
@@ -136,15 +135,20 @@ const backupStories = [
         fullname: "Dob",
         imgUrl: "http://some-img",
       },
+      {
+        _id: "u999",
+        fullname: "Yoni Nisenbaum",
+        imgUrl: "http://some-img",
+      },
     ],
     tags: ["fun", "romantic"],
   },
   {
-    _id: "s101",
-    txt: "Best trip ever 2 !!!",
+    _id: "s13453",
+    txt: "that's me !",
     imgUrl:
       "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
-    createdAt: 1707741093375,
+    createdAt: 1507741093375,
     createdBy: {
       _id: "u101",
       fullname: "Noam Nisenbaum",
@@ -193,6 +197,11 @@ const backupStories = [
       {
         _id: "u106",
         fullname: "Dob",
+        imgUrl: "http://some-img",
+      },
+      {
+        _id: "u999",
+        fullname: "Yoni Nisenbaum",
         imgUrl: "http://some-img",
       },
     ],
@@ -200,13 +209,13 @@ const backupStories = [
   },
   {
     _id: "s10342341",
-    txt: "Best trip ever 2 !!!",
+    txt: "that's me !!!",
     imgUrl:
-      "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
+      "https://static1.srcdn.com/wordpress/wp-content/uploads/2022/03/Family-guy-why-brian-can-talk-but-other-dogs-cant.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5",
     createdAt: 1707741093375,
     createdBy: {
       _id: "u101",
-      fullname: "Noam Nisenbaum",
+      fullname: "Brian the dog",
       imgUrl: "http://some-img",
     },
     loc: {
@@ -252,20 +261,25 @@ const backupStories = [
       {
         _id: "u106",
         fullname: "Dob",
+        imgUrl: "http://some-img",
+      },
+      {
+        _id: "u999",
+        fullname: "Yoni Nisenbaum",
         imgUrl: "http://some-img",
       },
     ],
     tags: ["fun", "romantic"],
   },
   {
-    _id: "s345345101",
-    txt: "Best trip ever 2 !!!",
+    _id: "s103423434343441",
+    txt: "that's me !!!",
     imgUrl:
-      "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
+      "https://thumbs.dreamstime.com/z/border-collie-vector-illustration-portrait-standing-profile-dog-blue-merle-color-colorful-isolated-white-background-104130488.jpg?ct=jpeg",
     createdAt: 1707741093375,
     createdBy: {
       _id: "u101",
-      fullname: "Noam Nisenbaum",
+      fullname: "Brian the dog",
       imgUrl: "http://some-img",
     },
     loc: {
@@ -313,184 +327,12 @@ const backupStories = [
         fullname: "Dob",
         imgUrl: "http://some-img",
       },
-    ],
-    tags: ["fun", "romantic"],
-  },
-  {
-    _id: "s105675675671",
-    txt: "Best trip ever 2 !!!",
-    imgUrl:
-      "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
-    createdAt: 1707741093375,
-    createdBy: {
-      _id: "u101",
-      fullname: "Noam Nisenbaum",
-      imgUrl: "http://some-img",
-    },
-    loc: {
-      // Optional
-      lat: 11.11,
-      lng: 22.22,
-      name: "Tel Aviv",
-    },
-    comments: [
       {
-        id: "_2",
-        by: {
-          _id: "u105",
-          fullname: "Bob",
-          imgUrl: "http://some-img",
-        },
-        txt: "good one!",
-        likedBy: [
-          // Optional
-          {
-            _id: "u105",
-            fullname: "Bob",
-            imgUrl: "http://some-img",
-          },
-        ],
-      },
-      {
-        id: "c1002",
-        by: {
-          _id: "u106",
-          fullname: "Dob",
-          imgUrl: "http://some-img",
-        },
-        txt: "not good!",
-      },
-    ],
-    likedBy: [
-      {
-        _id: "u105",
-        fullname: "Bob",
-        imgUrl: "http://some-img",
-      },
-      {
-        _id: "u106",
-        fullname: "Dob",
+        _id: "u999",
+        fullname: "Yoni Nisenbaum",
         imgUrl: "http://some-img",
       },
     ],
     tags: ["fun", "romantic"],
-  },
-  {
-    _id: "s102342342341",
-    txt: "Best trip ever 2 !!!",
-    imgUrl:
-      "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
-    createdAt: 1707741093375,
-    createdBy: {
-      _id: "u101",
-      fullname: "Noam Nisenbaum",
-      imgUrl: "http://some-img",
-    },
-    loc: {
-      // Optional
-      lat: 11.11,
-      lng: 22.22,
-      name: "Tel Aviv",
-    },
-    comments: [
-      {
-        id: "_2",
-        by: {
-          _id: "u105",
-          fullname: "Bob",
-          imgUrl: "http://some-img",
-        },
-        txt: "good one!",
-        likedBy: [
-          // Optional
-          {
-            _id: "u105",
-            fullname: "Bob",
-            imgUrl: "http://some-img",
-          },
-        ],
-      },
-      {
-        id: "c1002",
-        by: {
-          _id: "u106",
-          fullname: "Dob",
-          imgUrl: "http://some-img",
-        },
-        txt: "not good!",
-      },
-    ],
-    likedBy: [
-      {
-        _id: "u105",
-        fullname: "Bob",
-        imgUrl: "http://some-img",
-      },
-      {
-        _id: "u106",
-        fullname: "Dob",
-        imgUrl: "http://some-img",
-      },
-    ],
-    tags: ["fun", "romantic"],
-  },
-  {
-    _id: "s134535436401",
-    txt: "Best trip ever 2 !!!",
-    imgUrl:
-      "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
-    createdAt: 1707741093375,
-    createdBy: {
-      _id: "u101",
-      fullname: "Noam Nisenbaum",
-      imgUrl: "http://some-img",
-    },
-    loc: {
-      // Optional
-      lat: 11.11,
-      lng: 22.22,
-      name: "Tel Aviv",
-    },
-    comments: [
-      {
-        id: "_2",
-        by: {
-          _id: "u105",
-          fullname: "Bob",
-          imgUrl: "http://some-img",
-        },
-        txt: "good one!",
-        likedBy: [
-          // Optional
-          {
-            _id: "u105",
-            fullname: "Bob",
-            imgUrl: "http://some-img",
-          },
-        ],
-      },
-      {
-        id: "c1002",
-        by: {
-          _id: "u106",
-          fullname: "Dob",
-          imgUrl: "http://some-img",
-        },
-        txt: "not good!",
-      },
-    ],
-    likedBy: [
-      {
-        _id: "u105",
-        fullname: "Bob",
-        imgUrl: "http://some-img",
-      },
-      {
-        _id: "u106",
-        fullname: "Dob",
-        imgUrl: "http://some-img",
-      },
-    ],
-    tags: ["fun", "romantic"],
-  },
+  }
 ];

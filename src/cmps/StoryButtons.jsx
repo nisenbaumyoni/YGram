@@ -1,18 +1,23 @@
-export function StoryButtons() {
+import { useSelector } from "react-redux";
 
-  function onLikeClick(){
+export function StoryButtons({story}) {
+  const loggedInMiniUser = useSelector((storeState) => storeState.loggedInMiniUser);
+
+  console.log("loggedInMiniUser",loggedInMiniUser);
+
+  function onLikeClick() {
     console.log("onLikeClick");
-
   }
   return (
     <section className="story-buttons">
       <div>
         <img
-          className="story-button" onClick={() => onLikeClick()}
+          className="story-button"
+          onClick={() => onLikeClick()}
           src="/story-like-inactive.svg"
           alt=""
         />
-        <img 
+        <img
           className="story-button"
           src="/story-comment-inactive.svg"
           alt="comment"

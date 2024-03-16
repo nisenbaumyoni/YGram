@@ -11,11 +11,14 @@ export const SET_IS_LOADING = "SET_IS_LOADING";
 const initialState = {
   stories: null,
   filterBy: storyService.getDefaultFilter(),
+  loggedInMiniUser: {
+    _id: "u999",
+    fullname: "Yoni Nisenbaum",
+    imgUrl: "http://some-img",
+  }
 };
 
 export function storyReducer(state = initialState, action = {}) {
-  // console.log("state stories", state.stories);
-
   switch (action.type) {
     case SET_STORIES:
       return { ...state, stories: action.stories };

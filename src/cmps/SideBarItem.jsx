@@ -3,7 +3,7 @@ export function SideBarItem({ itemName }) {
   let text;
   switch (itemName) {
     case "home":
-      imgFile = "/public/sidebar-home-active.svg";
+      imgFile = "/sidebar-home-active.svg";
       text = "Home";
       break;
     case "search":
@@ -11,19 +11,18 @@ export function SideBarItem({ itemName }) {
       text = "Search";
       break;
     case "messages":
-      imgFile = "/public/Sidebar-messages-inactive.svg";
+      imgFile = "/Sidebar-messages-inactive.svg";
       text = "Messages";
       break;
     case "notifications":
-      imgFile = "/public/Sidebar-notifications-inactive.svg";
+      imgFile = "/Sidebar-notifications-inactive.svg";
       text = "Notifications";
       break;
     case "create":
-      imgFile = "/public/sidebar-create-inactive.svg";
+      imgFile = "/sidebar-create-inactive.svg";
       text = "Create";
       break;
     case "profile":
-      imgFile = "/public/sidebar-search-inactive.svg";
       text = "Profile";
       break;
     default:
@@ -31,8 +30,14 @@ export function SideBarItem({ itemName }) {
   }
   return (
     <section className="sidebar-item">
-      {text!=="Profile" &&<img src={`${imgFile}`} />}
-      {text==="Profile" &&<img className="sidebar-profile-photo" src="/public/account.png" alt="Avatar"/>}
+      {text !== "Profile" && <img src={`${imgFile}`} />}
+      {text === "Profile" && (
+        <img
+          className="sidebar-profile-photo"
+          src="/public/account.png"
+          alt="Avatar"
+        />
+      )}
       <span className="sidebar-text">{`${text}`}</span>
     </section>
   );
