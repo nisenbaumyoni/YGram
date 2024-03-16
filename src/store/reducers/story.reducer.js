@@ -1,5 +1,4 @@
 import { storyService } from "../../services/story.service";
-import { mockData } from "../../mockdata/mock.data";
 
 export const SET_STORIES = "SET_STORIES";
 export const ADD_STORY = "ADD_STORY";
@@ -15,9 +14,8 @@ const initialState = {
 };
 
 export function storyReducer(state = initialState, action = {}) {
-
   // console.log("state stories", state.stories);
-  
+
   switch (action.type) {
     case SET_STORIES:
       return { ...state, stories: action.stories };
@@ -49,3 +47,4 @@ export function storyReducer(state = initialState, action = {}) {
       return state;
   }
 }
+

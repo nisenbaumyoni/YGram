@@ -199,7 +199,7 @@ const backupStories = [
     tags: ["fun", "romantic"],
   },
   {
-    _id: "s101",
+    _id: "s10342341",
     txt: "Best trip ever 2 !!!",
     imgUrl:
       "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
@@ -258,7 +258,7 @@ const backupStories = [
     tags: ["fun", "romantic"],
   },
   {
-    _id: "s101",
+    _id: "s345345101",
     txt: "Best trip ever 2 !!!",
     imgUrl:
       "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
@@ -317,7 +317,7 @@ const backupStories = [
     tags: ["fun", "romantic"],
   },
   {
-    _id: "s101",
+    _id: "s105675675671",
     txt: "Best trip ever 2 !!!",
     imgUrl:
       "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
@@ -376,7 +376,7 @@ const backupStories = [
     tags: ["fun", "romantic"],
   },
   {
-    _id: "s101",
+    _id: "s102342342341",
     txt: "Best trip ever 2 !!!",
     imgUrl:
       "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
@@ -435,7 +435,7 @@ const backupStories = [
     tags: ["fun", "romantic"],
   },
   {
-    _id: "s101",
+    _id: "s134535436401",
     txt: "Best trip ever 2 !!!",
     imgUrl:
       "https://th.bing.com/th/id/R.343fcc1ec1dc4d948afab785843d1898?rik=vyQp99kH0yF0KQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_8CgUBDdSE8k%2fTKCmGyx3I0I%2fAAAAAAAAA_U%2fyhK5A-6mAIs%2fs1600%2frambo3-3.jpg&ehk=VUxRKTqxeHz5XV%2fDMOOmP%2fPAbhlEuU4u55jSQeuS%2f%2fc%3d&risl=&pid=ImgRaw&r=0", //an array for a few pictures
