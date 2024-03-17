@@ -7,7 +7,6 @@ import { Comment } from "./Comment";
 export function StoryPreview({story}) {
     return (
         <article className="story-preview">
-          {/* <h1>StoryPreview</h1> */}
           <StoryHeader story={story}/>
           <StoryContent story={story}/>
           <StoryButtons story={story}/>

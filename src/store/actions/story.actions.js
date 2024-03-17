@@ -12,7 +12,8 @@ import { store } from "../store";
 
 export async function loadStories() {
   try {
-    const stories = await storyService.query();
+    
+    const stories = await storyService.query(filterBy);
     store.dispatch({ type: SET_STORIES, stories });
   } catch (err) {
     console.log("Had issues loading stories", err);

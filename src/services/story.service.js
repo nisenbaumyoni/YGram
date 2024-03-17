@@ -263,11 +263,6 @@ const backupStories = [
         fullname: "Dob",
         imgUrl: "http://some-img",
       },
-      {
-        _id: "u999",
-        fullname: "Yoni Nisenbaum",
-        imgUrl: "http://some-img",
-      },
     ],
     tags: ["fun", "romantic"],
   },

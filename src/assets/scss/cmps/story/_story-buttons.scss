@@ -8,6 +8,8 @@
 
 .story-button{
     padding-right: 10px;
+    height:24px;
+    width:34px; //TODO - find a heart like better suiting the size
 
     &:hover {
         @each $property, $value in $story-button-hover {
