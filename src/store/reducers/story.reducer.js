@@ -29,15 +29,15 @@ export function storyReducer(state = initialState, action = {}) {
     case UPDATE_STORY:
       return {
         ...state,
-        stories: state.stories.filter((story) =>
-          story._id === action._Id ? action.story : story
+        stories: state.stories.map((story) =>
+          story._id === action.story._id ? action.story : story
         ),
       };
 
     case REMOVE_STORY:
       return {
         ...state,
-        stories: state.stories.filter((story) => story._id !== action._Id),
+        stories: state.stories.filter((story) => story._id !== action._id),
       };
 
     case SET_FILTER_BY:

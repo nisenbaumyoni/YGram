@@ -46,7 +46,7 @@ export async function removeStoryOptimistic(storyId) {
 
 export async function saveStory(storyToSave) {
   store.dispatch({ type: SET_IS_LOADING, isLoading: true });
-  const type = storyToSave.id ? UPDATE_STORY : ADD_STORY;
+  const type = storyToSave._id ? UPDATE_STORY : ADD_STORY;
   try {
     const savedStory = await storyService.save(storyToSave);
     store.dispatch({ type, story: savedStory });
