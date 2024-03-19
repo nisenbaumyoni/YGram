@@ -33,10 +33,7 @@ export function StoryIndex() {
   // const [filterBy, setFilterBy] = useState(storyService.getDefaultFilter);
 
   useEffect(() => {
-    console.log("useEffect");
-
     setSearchParams(filterBy);
-    console.log("before useEffect/loadStoriesFromStore()");
     loadStoriesFromStore();
     // loadStories();
   }, [filterBy]);

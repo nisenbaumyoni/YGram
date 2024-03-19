@@ -3,13 +3,15 @@ import { UserCmp } from "./UserCmp";
 export function SuggestedForYou() 
 {
     return(
-        <section className="suggested-for-you">
+        <section >
             <p className="soft-text">Suggested for you</p>
-            <UserCmp user={"nopic"} isLoggedIn={false} />
-            <UserCmp user={"nopic"} isLoggedIn={false} />
-            <UserCmp user={"nopic"} isLoggedIn={false} />
-            <UserCmp user={"nopic"} isLoggedIn={false} />
-            <UserCmp user={"nopic"} isLoggedIn={false} />
+            <div>
+            <UserCmp className="user-cmp" user={"nopic"} isLoggedIn={false} />
+            <UserCmp className="user-cmp" user={"nopic"} isLoggedIn={false} />
+            <UserCmp className="user-cmp" user={"nopic"} isLoggedIn={false} />
+            <UserCmp className="user-cmp" user={"nopic"} isLoggedIn={false} />
+            <UserCmp className="user-cmp" user={"nopic"} isLoggedIn={false} />
+            </div>
         </section>
     )
 }

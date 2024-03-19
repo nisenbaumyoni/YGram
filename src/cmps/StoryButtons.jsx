@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { UPDATE_STORY } from "../store/reducers/story.reducer";
+import { useSelector } from "react-redux";
 import { saveStory } from "../store/actions/story.actions";
 
 export function StoryButtons({ story }) {
@@ -10,8 +9,7 @@ export function StoryButtons({ story }) {
   const [isLikedByLoggedinUser, setIsLikedByLoggedinUser] = useState(
     story.likedBy.find((element) => element._id === loggedInMiniUser._id)
   );
-  let StoryToSave = structuredClone(story);
-  const dispatch = useDispatch();
+  let storyToSave = structuredClone(story);
 
   useEffect(() => {
     setIsLikedByLoggedinUser(
@@ -24,11 +22,11 @@ export function StoryButtons({ story }) {
       const updatedLikedBy = story.likedBy.filter(
         (likedBy) => likedBy._id !== loggedInMiniUser._id
       );
-      StoryToSave.likedBy = updatedLikedBy;
+      storyToSave.likedBy = updatedLikedBy;
     } else {
-      StoryToSave.likedBy.push(loggedInMiniUser);
+      storyToSave.likedBy.push(loggedInMiniUser);
     }
-    saveStory(StoryToSave)
+    saveStory(storyToSave)
   }
 
   return (

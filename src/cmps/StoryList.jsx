@@ -2,7 +2,6 @@ import { NewStories } from "./NewStories";
 import { StoryPreview } from "./StoryPreview";
 
 export function StoryList({ stories }) {
-  // console.log(stories);
   return (
     <section className="story-list">
       <ul>

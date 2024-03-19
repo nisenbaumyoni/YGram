@@ -1,0 +1,51 @@
+.story-preview {
+    border-bottom: solid 1px $clr5;
+}
+
+.emoji-text-area {
+    position: relative;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 10px;
+    // padding: 10px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.comment-post {
+
+    @each $property,
+    $value in $blue-link-hover {
+        #{$property}: $value;
+    }
+}
+
+.emoji-button {
+    position: absolute;
+    // bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+        &:hover {
+        @each $property, $value in $story-button-hover {
+            #{$property}: $value;
+          }
+    }
+}
+
+.emoji-picker {
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+}
+
+// .emoji-button{
+//     width: 10px;
+//     min-height: 10px;
+// }
