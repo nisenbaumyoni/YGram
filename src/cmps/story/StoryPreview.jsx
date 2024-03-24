@@ -2,7 +2,7 @@ import { StoryButtons } from "./StoryButtons";
 import { StoryContent } from "./StoryContent";
 import { StoryHeader } from "./StoryHeader";
 import { StoryStats } from "./StoryStats";
-import { Comment } from "./Comment";
+import { Comment } from "../Comment";
 
 export function StoryPreview({story}) {
     return (

@@ -9,10 +9,10 @@ import { storyService } from "../services/story.service";
 import { loadStories } from "../store/actions/story.actions";
 
 //Components
-import { StoryList } from "../cmps/StoryList";
-import { NewStories } from "../cmps/NewStories";
-import { SuggestedForYou } from "../cmps/SuggestedForYou";
-import { About } from "../cmps/About";
+import { StoryList } from "../cmps/story/StoryList";
+import { NewStories } from "../cmps/story/NewStories";
+import { SuggestedForYou } from "../cmps/rightbar/SuggestedForYou";
+import { About } from "../cmps/rightbar/About";
 import { Loggedin } from "../cmps/rightbar/loggedin";
 
 export function StoryIndex() {

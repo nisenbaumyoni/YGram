@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router";
 import routes from "./routes";
 import { StoryIndex } from "./pages/StoryIndex";
 import { ProfileIndex } from "./pages/ProfileIndex";
-import { SideBar } from "./cmps/SideBar";
+import { SideBar } from "./cmps/sidebar/SideBar";
 
 export function App() {
   return (

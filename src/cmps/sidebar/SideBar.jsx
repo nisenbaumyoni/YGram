@@ -1,5 +1,5 @@
-import { Logo } from "../cmps/Logo";
-import { SideBarItem } from "../cmps/SideBarItem";
+import { Logo } from "./Logo";
+import { SideBarItem } from "./SideBarItem";
 
 export function SideBar() {
   return (

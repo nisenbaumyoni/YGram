@@ -12,7 +12,7 @@ export function Comment({ story }) {
   const [showPostButton, setShowPostButton] = useState(false);
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const loggedInMiniUser = useSelector(
-    (storeState) => storeState.loggedInMiniUser
+    storeState => storeState.loggedInMiniUser
   );
 
   useEffect(() => {

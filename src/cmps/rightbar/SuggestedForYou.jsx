@@ -1,4 +1,4 @@
-import { UserCmp } from "./UserCmp";
+import { UserCmp } from "../UserCmp";
 
 export function SuggestedForYou() 
 {

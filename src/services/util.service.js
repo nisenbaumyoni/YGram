@@ -33,9 +33,11 @@ function getTimePassed(timestamp) {
   const hoursPassed = Math.floor(diff / (1000 * 60 * 60));
   const daysPassed = Math.floor(diff / (1000 * 60 * 60 * 24));
   const weeksPassed = Math.floor(diff / (1000 * 60 * 60 * 24 * 7));
+  const yearsPassed = Math.floor(diff / (1000 * 60 * 60 * 24 * 7 * 52));
 
   // Return appropriate time passed based on the duration
-  if (weeksPassed > 0) {
+  if (yearsPassed > 0) return yearsPassed + "y";
+  else if (weeksPassed > 0) {
     return weeksPassed + "w";
   } else if (daysPassed > 0) {
     return daysPassed + "d";

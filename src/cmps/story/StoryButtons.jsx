@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { saveStory } from "../store/actions/story.actions";
+import { saveStory } from "../../store/actions/story.actions";
 
 export function StoryButtons({ story }) {
   const loggedInMiniUser = useSelector(
