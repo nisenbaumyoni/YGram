@@ -2,7 +2,7 @@ import { StoryButtons } from "./StoryButtons";
 import { StoryContent } from "./StoryContent";
 import { StoryHeader } from "./StoryHeader";
 import { StoryStats } from "./StoryStats";
-import { Comment } from "../Comment";
+import { StoryComment } from "./StoryComment";
 
 export function StoryPreview({story}) {
     return (
@@ -11,7 +11,7 @@ export function StoryPreview({story}) {
           <StoryContent story={story}/>
           <StoryButtons story={story}/>
           <StoryStats story={story}/>
-          <Comment story={story}/>
+          <StoryComment story={story}/>
         </article>
 
       );

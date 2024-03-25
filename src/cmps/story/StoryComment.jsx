@@ -3,10 +3,12 @@ import TextareaAutosize from "react-textarea-autosize";
 import { Picker } from "emoji-mart";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import { StoryModal } from './StoryModal'
 
-import { commentService } from "../services/comment.service";
+import { commentService } from "../../services/comment.service";
 
-export function Comment({ story }) {
+export function StoryComment({ story }) {
+  const [isStoryModalOpen, setIsStoryModalOpen] = useState(false);
   const [numOfComments, setNumOfComments] = useState(story.comments.length);
   const [comment, setComment] = useState("");
   const [showPostButton, setShowPostButton] = useState(false);
@@ -47,10 +49,17 @@ export function Comment({ story }) {
       console.log(err);
     }
   }
+  function onClickViewAllComments(){
+    console.log(onClickViewAllComments);
+    setIsStoryModalOpen(true)
+  }
 
+  function onClickCloseStoryModal(){
+    setIsStoryModalOpen(false)
+  }
   return (
     <section className="comment">
-      <p className="soft-text">{`View all ${numOfComments} comments`}</p>
+      <p className="soft-text link" onClick={onClickViewAllComments}>{`View all ${numOfComments} comments`}</p>
       <div className="emoji-text-area">
         <TextareaAutosize
           value={comment}
@@ -79,6 +88,7 @@ export function Comment({ story }) {
           </div>
         )}
       </div>
+      {isStoryModalOpen&&<StoryModal onClose={onClickCloseStoryModal} story={story}/>}
     </section>
   );
 }

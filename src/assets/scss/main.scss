@@ -11,6 +11,7 @@
 @import 'cmps/story/story-list';
 @import 'cmps/story/story-preview';
 @import 'cmps/story/story-stats';
+@import 'cmps/story/story-modal';
 @import 'cmps/sidebar/sidebar';
 @import 'cmps/rightbar/rightbar';
 //pages
@@ -111,4 +112,9 @@ ul {
     font-weight: bold;
     color: $clr4;
     padding: 2px;
+}
+
+.link {
+    cursor: pointer;
+    transition-duration: 0.3s;
 }

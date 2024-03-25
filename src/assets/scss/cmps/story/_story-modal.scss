@@ -1,0 +1,47 @@
+.story-modal{
+    // height: 600 px;
+    // width: 800 px;
+    // background-color: $clr4;
+    // position: absolute;
+    text-align: center;
+    position:fixed;
+    width: 400px;
+    height: 300px;
+    right: 0px;
+    top: 0px;
+    margin: inherit;
+    padding: 10px;
+    background-color:$clr3;
+    border-color: black;
+    border-style: groove;
+}
+
+.story-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .story-layout {
+    background-color: white;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+  }
+  
+  .story-image {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .story-comments {
+    width: 50%;
+    height: 100%;
+  }
