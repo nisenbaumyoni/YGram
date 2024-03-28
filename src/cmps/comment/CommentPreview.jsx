@@ -3,14 +3,11 @@ import { StoryHeader } from "../story/StoryHeader";
 import { StoryStats } from "../story/StoryStats";
 import { CommentList } from "./CommentList";
 
-export function CommentPreview({story}) {
-    return (
-        <article className="comment-preview">
-          <StoryHeader story={story}/>
-          <CommentList story={story}/>
-          <StoryButtons story={story}/>
-          <StoryStats story={story}/>
-        </article>
-
-      );
+export function CommentPreview({ storyId,comment }) {
+  return (
+    <article className="comment-preview">
+      <div></div>
+      <div></div>
+    </article>
+  );
 }

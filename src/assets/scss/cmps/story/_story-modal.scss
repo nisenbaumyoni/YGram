@@ -1,47 +1,113 @@
-.story-modal{
-    // height: 600 px;
-    // width: 800 px;
-    // background-color: $clr4;
-    // position: absolute;
-    text-align: center;
-    position:fixed;
-    width: 400px;
-    height: 300px;
-    right: 0px;
-    top: 0px;
-    margin: inherit;
-    padding: 10px;
-    background-color:$clr3;
-    border-color: black;
-    border-style: groove;
+.storymodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.story-modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .story-layout {
-    background-color: white;
-    max-width: 90%;
-    max-height: 90%;
-    overflow: hidden;
-  }
-  
-  .story-image {
-    width: 50%;
-    height: 100%;
-    object-fit: contain;
-  }
+.storymodal-layout {
+  background-color: white;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas:
+    'story-img story-creator'
+    'story-img comment'
+    'story-img button'
+    'story-img stats'
+    'story-img addcomment';
+  grid-template-rows: 1fr 7fr 1fr 1fr 1fr;
+  grid-template-columns: 6fr 4fr;
+  border: 1px solid black;
 
-  .story-comments {
-    width: 50%;
-    height: 100%;
-  }
+}
+
+.storymodal-image {
+  grid-area: story-img;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid black;
+
+}
+
+.storymodal-creator {
+  grid-area: story-creator;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+
+}
+.storymodal-comments {
+  grid-area: comment;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.storymodal-buttons {
+  grid-area: button;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.storymodal-stats {
+  grid-area: stats;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.storymodal-addcomment {
+  grid-area: addcomment;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+// .comment-layout {
+//   //     background-color: aqua;
+//   //     height: 100%;
+//   //     width: 100%;
+//   //     display: grid;
+//   //     grid-template-areas:
+//   //         'content story-creator'
+//   //         'content comment'
+//   //         'content button'
+//   //         'content stats'
+//   //         'content addcomment';
+//   //     grid-template-rows: 1fr 7fr 1fr 1fr 1fr;
+//   //     grid-template-columns: 6fr 4fr;
+//   // }
+
+//   // .story-creator {
+//   //     background-color: blueviolet;
+//   //     border: 1px solid black;
+//   //     grid-area: story-creator;
+
+//   // }
+
+// .story-modal {
+//   // height: 600 px;
+//   // width: 800 px;
+//   // background-color: $clr4;
+//   // position: absolute;
+//   text-align: center;
+//   position: fixed;
+//   width: 400px;
+//   height: 300px;
+//   right: 0px;
+//   top: 0px;
+//   margin: inherit;
+//   padding: 10px;
+//   background-color: $clr3;
+//   border-color: black;
+//   border-style: groove;
+// }

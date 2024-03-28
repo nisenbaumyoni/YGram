@@ -12,13 +12,19 @@ const mockLoggedInUser = {
   savedStoryIds: [],
 };
 
+const mockMiniUserLoggedInUser = {
+  _id: "u101",
+  fullname: "Muki Muka",
+  imgUrl: "http://some-img",
+};
+
 export const profileService = {
   query,
   save,
   remove,
   getById,
   createProfile,
-  getDefaultFilter,
+  getLoggedinUser,
 };
 
 const STORAGE_KEY = "profiles";
@@ -85,8 +91,6 @@ function _createMockProfiles() {
   }
 }
 
-function getDefaultFilter() {
-  return {
-    
-  };
+function getLoggedinUser() {
+  return mockMiniUserLoggedInUser
 }

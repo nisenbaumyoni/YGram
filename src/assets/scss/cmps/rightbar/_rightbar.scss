@@ -1,34 +1,31 @@
 .loggedin {
     // border: 1px solid black;
     grid-area: loggedin;
+    width: 100%;
     display: flex;
-    // justify-content: space-between;
-    // justify-content: center;
-    // align-items: center;
-
+    padding-inline-start: 80px;
 }
 
 .suggested-for-you {
-    // border: 1px solid black;
-    grid-area: loggedin;
-    display: flex;
-    justify-content: space-between;
-    // justify-content: left;
-    align-items: left;
+    padding-inline-start: 80px;
+}
+
+.about {
+    padding-inline-start: 80px;
 
 }
 
 .user-cmp {
     // border: 1px solid black;
     grid-area: user-cmp;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    justify-content: left;
     /* Center horizontally */
     align-items: center;
     /* Center vertically */
     padding: 10px;
-    margin: 4px;
+    // margin: 4px;
 }
 
 .user-cmp-leftside {
@@ -49,9 +46,9 @@
 
 .user-cmp-text {
     display: flex;
+    flex-direction: column;
     padding-left: 10px;
     justify-content: center;
-    align-items: center;
 }
 
 .user-cmp-action {

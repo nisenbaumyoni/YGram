@@ -1,4 +1,6 @@
+import { profileService } from "../../services/profile.service";
 import { storyService } from "../../services/story.service";
+
 
 export const SET_STORIES = "SET_STORIES";
 export const ADD_STORY = "ADD_STORY";
@@ -11,11 +13,7 @@ export const SET_IS_LOADING = "SET_IS_LOADING";
 const initialState = {
   stories: null,
   filterBy: storyService.getDefaultFilter(),
-  loggedInMiniUser: {
-    _id: "u999",
-    fullname: "Yoni Nisenbaum",
-    imgUrl: "http://some-img",
-  }
+  loggedInMiniUser: profileService.getLoggedinUser(),
 };
 
 export function storyReducer(state = initialState, action = {}) {
@@ -50,4 +48,3 @@ export function storyReducer(state = initialState, action = {}) {
       return state;
   }
 }
-

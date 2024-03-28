@@ -6,7 +6,7 @@ export function Loggedin() {
   const user = "nopic";
   return (
     <section className="loggedin">
-      <UserCmp user={user} isLoggedIn={isLoggedIn} />
+      <UserCmp user={user} isLoggedIn={isLoggedIn} creator={false}/>
     </section>
   );
 }

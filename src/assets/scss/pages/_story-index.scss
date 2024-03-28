@@ -1,8 +1,8 @@
 .story-index {
     grid-area: indexpage;
-    margin-inline-start: 100px;
+    // margin-inline-start: 100px;
     height: 100%;
-    width: 100%;
+    max-width: 1280px;
     display: grid;
     grid-template-areas:
         'newstories loggedin'
@@ -10,5 +10,5 @@
         'story-list about';
     grid-template-rows: 1.5fr 5fr 4fr;
     grid-template-columns: 8fr 4fr;
-    padding-left: 80px;
+    padding-inline: 160px;
 }
